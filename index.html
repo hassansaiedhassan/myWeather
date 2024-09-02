@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet" />
+  <title>Weather</title>
+
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/bootstrap.rtl.min.css" />
+  <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+<body>
+  <section class="bg-danger">
+    <!-- ===nav_bar=== -->
+    <nav class="navbar navbar-expand-lg bg-dark bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid w-75">
+        <a class="navbar-brand" href="#">
+          <div>
+            <img src="./images/logo.png" alt="Logo">
+            <div><span>Weather</span></div>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- ==========Home section ========== -->
+  <section id="Home">
+    <div class="container p-3">
+      <div class="searchParent d-flex justify-content-center align-items-center pt-4 pb-1">
+        <div class="search position-relative w-100 mt-5 mb-2"> 
+          <input type="text" id="searchInput" class="form-control p-2 rounded-3" placeholder="Search city...">
+          <input type="submit" id="searchInputSubmit" value="search" class="position-absolute top-1 btn btn-light">
+        </div>
+        <div id="loading">
+          <div class="loader"></div>
+        </div>
+      </div>
+      <div id="Error"></div>
+      <div class="owl-carousel owl-theme mt-5  d-flex justify-content-center align-items-center p-3" id="weatherDiv">
+        <!-- Weather cards will be inserted here -->
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
